@@ -13,25 +13,19 @@ $logo-color: #6e6e6e;
 //}
 
 @mixin body-font-light {
-    font-family: 'Josefin Sans';
-    font-style: normal;
-    font-weight: 300;
+    
 }
 
 @mixin body-font-italic {
-    font-family: 'Josefin Sans';
-    font-style: italic;
-    font-weight: 300;
+    
 }
     
 @mixin body-font-bold {
-    font-family: 'Josefin Sans';
-    font-style: normal;
-    font-weight: 600;
+    
 }
     
 @mixin headline-font {
-    font-family: 'Josefin Sans';
-    font-style: italic;
-    font-weight: 700;
+    font-family: "ltc-bodoni-175",serif;
+    font-style: normal;
+    font-weight: 400;
 }
