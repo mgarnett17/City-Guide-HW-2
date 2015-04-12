@@ -1,45 +1,25 @@
 /* Base.scss */
 
-body {
-    //background-color: $background-color;
-    box-sizing: border-box;
-    color: $color;
-    @include body-font-light;
-    //font-size: $base-font-size;
-    margin: 0 auto;
-    max-width: 600px;
-    padding: 0 10px;
-    width: 100%;
-}
-
 img {
     max-width: 100%;
-}
-
-a {
-    transition: color 300ms linear;
-    &:hover {
-        transition: color 300ms linear;
-    }
+    vertical-align: bottom;
 }
 
 body {
     @include body-font-light;
     margin: 0 auto;
     max-width: 600px;
-    width: 100%;
+    width: 200px;
 }
 
-h1, h2, h3 {
+h1, h2, h3, h4 {
     @include headline-font;
-    line-height: 1;
-    overflow: hidden;
-}
-
-i, em, time {
-    @include body-font-italic;
 }
 
 b, strong {
+    @include body-font-bold;
+}
+
+i, em {
     @include body-font-italic;
 }

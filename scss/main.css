@@ -4,7 +4,6 @@
  * 2. Prevent iOS text size adjust after orientation change, without disabling
  *    user zoom.
  */
-@import url(http://fonts.googleapis.com/css?family=Josefin+Sans:300,600,300italic,700italic);
 html {
   font-family: sans-serif;
   /* 1 */
@@ -359,33 +358,32 @@ th {
 
 /* Globals.scss */
 /* Base.scss */
-body {
-  box-sizing: border-box;
-  color: #262626;
-  margin: 0 auto;
-  max-width: 600px;
-  padding: 0 10px;
-  width: 100%; }
-
 img {
-  max-width: 100%; }
-
-a {
-  transition: color 300ms linear; }
-  a:hover {
-    transition: color 300ms linear; }
+  max-width: 100%;
+  vertical-align: bottom; }
 
 body {
-  margin: 0 auto;
-  max-width: 600px;
-  width: 100%; }
-
-h1, h2, h3 {
-  font-family: "ltc-bodoni-175",serif;
+  font-family: "ff-tisa-web-pro",serif;
   font-style: normal;
   font-weight: 400;
-  line-height: 1;
-  overflow: hidden; }
+  margin: 0 auto;
+  max-width: 600px;
+  width: 200px; }
+
+h1, h2, h3, h4 {
+  font-family: "josefin",sans-serif;
+  font-style: normal;
+  font-weight: 300; }
+
+b, strong {
+  font-family: "ff-tisa-web-pro",serif;
+  font-style: normal;
+  font-weight: 700; }
+
+i, em {
+  font-family: "ff-tisa-web-pro",serif;
+  font-style: italic;
+  font-weight: 400; }
 
 /* Layout.scss */
 nav[role="navigation"] {
@@ -428,7 +426,7 @@ header[role="banner"], main[role="main"] {
   footer[role="contentinfo"] {
     float: left; } }
 .cafe, .food {
-  margin-bottom: em(100px); }
+  margin-bottom: 4.54545em; }
 
 /* Module.scss */
 nav[role="navigation"] ul {
@@ -469,13 +467,13 @@ main[role="main"] {
 
 .cafe h1 svg, .food h1 svg,
 .attractions h1 svg {
-  height: em(16px);
+  height: 0.72727em;
   fill: #262626;
-  margin-right: em(6px); }
+  margin-right: 0.27273em; }
 
 .cafe h1, .food h1, .attractions h1,
 .cafe h2, .food h2, .attractions h2 {
-  font-size: em(50px); }
+  font-size: 2.27273em; }
 
 .cafe h1 a, .food h1 a, .attractions h1 a,
 .cafe h2 a, .food h2 a, .attractions h2 a {
@@ -487,15 +485,15 @@ main[role="main"] {
     transition: color 300ms linear; }
 
 .cafe-location, .food-location, .attraction-location {
-  margin-bottom: em(100px); }
+  margin-bottom: 4.54545em; }
   .cafe-location:last-of-type, .food-location:last-of-type, .attraction-location:last-of-type {
     margin-bottom: 0; }
 
 .street-address:before {
   content: "a. ";
-  font-family: "ltc-bodoni-175",serif;
+  font-family: "josefin",sans-serif;
   font-style: normal;
-  font-weight: 400; }
+  font-weight: 300; }
 
 abbr[title] {
   border-bottom: none; }
@@ -504,9 +502,9 @@ abbr[title] {
   display: block; }
   .tel:before {
     content: "p. ";
-    font-family: "ltc-bodoni-175",serif;
+    font-family: "josefin",sans-serif;
     font-style: normal;
-    font-weight: 400; }
+    font-weight: 300; }
 
 footer[role="contentinfo"] {
   background-color: #262626;
@@ -518,7 +516,7 @@ footer[role="contentinfo"] h2 {
   margin: 0; }
 
 footer[role="contentinfo"] ul + h2 {
-  margin-top: em(22px); }
+  margin-top: 1em; }
 
 footer[role="contentinfo"] ul {
   list-style-type: none;

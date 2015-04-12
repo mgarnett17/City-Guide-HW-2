@@ -1,31 +1,35 @@
 /* Globals.scss */
 
-@import url(http://fonts.googleapis.com/css?family=Josefin+Sans:300,600,300italic,700italic);
-
 $color: #262626;
-//$background-color: #262626;
-//$base-font-size: 22px;
+$background-color: #262626;
+$base-font-size: 22px;
 $logo-color: #6e6e6e;
-//$line-height: 1.45;
+$line-height: 1.45;
 
-//@function em($px, $base: $base-font-size) {
-    //@return($px / $base) * 1em;
-//}
+@function em($px, $base: $base-font-size) {
+    @return($px / $base) * 1em;
+}
 
 @mixin body-font-light {
-    
+    font-family: "ff-tisa-web-pro",serif;
+    font-style: normal;
+    font-weight: 400;
 }
 
 @mixin body-font-italic {
-    
+    font-family: "ff-tisa-web-pro",serif;
+    font-style: italic;
+    font-weight: 400;
 }
     
 @mixin body-font-bold {
-    
+    font-family: "ff-tisa-web-pro",serif;
+    font-style: normal;
+    font-weight: 700;
 }
     
 @mixin headline-font {
-    font-family: "ltc-bodoni-175",serif;
+    font-family: "josefin",sans-serif;
     font-style: normal;
-    font-weight: 400;
+    font-weight: 300;
 }
